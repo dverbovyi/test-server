@@ -20,4 +20,11 @@ describe('#API TESTS', () => {
         .expect(200, rolesMocks, done)
     })
   })
+  describe('404', () => {
+    it('should return status 404 if resource not found', done => {
+      request(app)
+        .get('/blabla')
+        .expect(404, {}, done);
+    })
+  })
 })
