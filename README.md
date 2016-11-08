@@ -1,5 +1,5 @@
-[![Test Coverage](https://codeclimate.com/github/dverbovyi/test-server/badges/coverage.svg)](https://codeclimate.com/github/dverbovyi/test-server/coverage)
 [![Code Climate](https://codeclimate.com/github/dverbovyi/test-server/badges/gpa.svg)](https://codeclimate.com/github/dverbovyi/test-server)
+[![Test Coverage](https://codeclimate.com/github/dverbovyi/test-server/badges/coverage.svg)](https://codeclimate.com/github/dverbovyi/test-server/coverage)
 
 #test-server
 NodeJS + Express
