@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha ./src/test.spec.js && npm run test-cov",
     "start": "node src/app.js",
-    "test-cov": "istanbul cover _mocha src/**/*.spec.js -- --timeout 5000 && istanbul report html"
+    "test-cov": "istanbul cover _mocha src/**/*.spec.js -- --timeout 5000 && istanbul report lcov"
   },
   "repository": {
     "type": "git",
