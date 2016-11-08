@@ -1,5 +1,6 @@
-[![Code Climate](https://codeclimate.com/github/dverbovyi/test-server/badges/gpa.svg)](https://codeclimate.com/github/dverbovyi/test-server)
+[![Build Status](https://travis-ci.org/dverbovyi/test-server.svg?branch=master)](https://travis-ci.org/dverbovyi/test-server)
 [![Test Coverage](https://codeclimate.com/github/dverbovyi/test-server/badges/coverage.svg)](https://codeclimate.com/github/dverbovyi/test-server/coverage)
+[![Code Climate](https://codeclimate.com/github/dverbovyi/test-server/badges/gpa.svg)](https://codeclimate.com/github/dverbovyi/test-server)
 
 #test-server
 NodeJS + Express
