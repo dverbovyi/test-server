@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json({ limit: '500mb' }));
-app.use('/api/', router);
+app.use('/', router);
 
 app.listen(config.PORT, () => {
     console.log(`listening on ${config.PORT}`);
