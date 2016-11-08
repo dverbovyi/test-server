@@ -6,5 +6,6 @@ let router = express.Router();
 
 router.get('/accounts', controller.getAccounts);
 router.get('/roles', controller.getRoles);
+router.get('*', controller.notFound);
 
 module.exports = router;
