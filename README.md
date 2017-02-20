@@ -22,7 +22,7 @@ returns roles
 ###run server:
 	npm start
 
-The endpoints available under `http://localhost:3000` host:
+The endpoints available under `http://localhost:3000` host, e.g.:
 
 `http://localhost:3000/api/roles`
 `http://localhost:3000/api/accounts`
