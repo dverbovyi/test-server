@@ -21,7 +21,12 @@ returns roles
 	npm i
 ###run server:
 	npm start
-The server's API available on `http://localhost:3000`
+
+The endpoints available under `http://localhost:3000` host:
+
+`http://localhost:3000/api/roles`
+`http://localhost:3000/api/accounts`
+
 ###run tests:
 	npm test	
 
