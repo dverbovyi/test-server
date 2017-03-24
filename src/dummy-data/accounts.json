@@ -7,11 +7,11 @@
     {
         "username": "admin",
         "password": "admi",
-        "roleTypeId": "1"
+        "roleId": "1"
     },
     {
         "username": "customer",
         "password": "cust",
-        "roleTypeId": "2"
+        "roleId": "2"
     }
 ]
