@@ -2,24 +2,24 @@
 [![Test Coverage](https://codeclimate.com/github/dverbovyi/test-server/badges/coverage.svg)](https://codeclimate.com/github/dverbovyi/test-server/coverage)
 [![Code Climate](https://codeclimate.com/github/dverbovyi/test-server/badges/gpa.svg)](https://codeclimate.com/github/dverbovyi/test-server)
 
-#test-server
+# test-server
 NodeJS + Express
 
-##Available APIs
+## Available APIs
 
-###Accounts
+### Accounts
 	GET api/accounts
 returns accounts
 
-###Roles
+### Roles
 	GET api/roles
 returns roles
 
-##Server setup
+## Server setup
 
-###install dependencies:
+### install dependencies:
 	npm i
-###run server:
+### run server:
 	npm start
 
 The endpoints available under `http://localhost:3000` host, e.g.:
@@ -27,6 +27,6 @@ The endpoints available under `http://localhost:3000` host, e.g.:
 `http://localhost:3000/api/roles`
 `http://localhost:3000/api/accounts`
 
-###run tests:
+### run tests:
 	npm test	
 
