@@ -15,6 +15,10 @@ returns accounts
 	GET api/roles
 returns roles
 
+### Blogs
+	GET api/blogs
+returns blogs
+
 ## Server setup
 
 ### install dependencies:
@@ -26,6 +30,7 @@ The endpoints available under `http://localhost:3000` host, e.g.:
 
 `http://localhost:3000/api/roles`
 `http://localhost:3000/api/accounts`
+`http://localhost:3000/api/blogs`
 
 ### run tests:
 	npm test	

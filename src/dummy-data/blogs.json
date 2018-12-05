@@ -1,0 +1,61 @@
+{
+    "latest": [0, 1, 2, 3, 4],
+    "blogs": [
+        {
+            "id": 0,
+            "title": "Art.com helps customers find art they love with visual search",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-11-08T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/11/thingforAli.jpg"
+        },
+        {
+            "id": 1,
+            "title": "Predictive analytics for promotion and price optimization",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-07-15T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Dear Oracle ATG users, It is time to treat your ATG stack as a legacy system and move forward to the cloud, open source, and microservices",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-06-16T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/03/dear-atg-users.jpg"
+        },
+        {
+            "id": 3,
+            "title": "How to build a pricing engine for e-commerce promotions and offers",
+            "watched": 542,
+            "comments": 17,
+            "published": "2017-09-13T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/10/shutterstock_718835200.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Why you need a microservices management platform and how to build it",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-07-11T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/11/shutterstock_617959973--1-.jpg"
+        },
+        {
+            "id": 5,
+            "title": "How to replatform e-commerce search from Endeca to Solr",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-10-16T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/10/shutterstock_653127499--1-.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Grid Genie: the beginning of conversational commerce",
+            "watched": 542,
+            "comments": 17,
+            "published": "2018-06-20T21:20:18.000Z",
+            "previewImg": "https://blog.griddynamics.com/content/images/2018/07/shutterstock_1085021570--1-.jpg"
+        }
+    ]
+}
