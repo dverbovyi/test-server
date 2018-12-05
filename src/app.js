@@ -10,6 +10,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json({ limit: '500mb' }));
+app.use(express.static('public'))
 app.use('/', router);
 
 app.listen(config.PORT, () => {
