@@ -29,7 +29,9 @@ returns blogs
 The endpoints available under `http://localhost:3000` host, e.g.:
 
 `http://localhost:3000/api/roles`
+
 `http://localhost:3000/api/accounts`
+
 `http://localhost:3000/api/blogs`
 
 ### run tests:
