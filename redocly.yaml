@@ -1,0 +1,23 @@
+apis:
+  apiName@version:
+    root: ./openapi.yaml
+
+extends:
+  - recommended
+  
+rules:
+  assert/operation-description:
+    subject: 
+      type: Operation
+      property: description
+    assertions:
+      defined: true
+      minLength: 30
+
+theme:
+  openapi:
+    generateCodeSamples:
+      languages:
+        - lang: curl
+        - lang: Node.js
+        - lang: Python

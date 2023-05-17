@@ -1,0 +1,162 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: mock-server
+  contact:
+    email: dmitriyverbovoy@gmail.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  x-logo:
+    url: 'https://redocly.github.io/openapi-template/logo.png'
+  description: |
+    This is an test API to demonstrate features of the OpenAPI
+    specification.
+
+servers:
+  - url: 'http://localhost:3000/api'
+paths:
+  '/roles':
+    get:
+      tags:
+        - roles
+      summary: Roles list
+      description: |
+        Get available mocked user roles list
+      operationId: getRoles
+      security:
+        - {}
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Role'
+              example:
+                id: 3
+                name: manager
+        '403':
+          description: Forbidden
+        '404':
+          description: roles not found
+  '/accounts':
+    get:
+      tags:
+        - accounts
+      summary: Accounts list
+      description: |
+        Get available mocked accounts list
+      operationId: getAccounts
+      security:
+        - {}
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+              example:
+                username: dverbovyi
+                password: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+                roleId: 3
+        '403':
+          description: Forbidden
+        '404':
+          description: accounts not found
+  '/blogs':
+    get:
+      tags:
+        - blogs
+      summary: Blogs list
+      description: |
+        Get available mocked blogs list
+      operationId: getBlogs
+      security:
+        - {}
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Blog'
+              example:
+                id: 3
+                title: Predictive analytics
+                watched: 323
+                comments: 23
+                published: 2018-07-15T21:20:18.000Z
+                previewImg: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg
+                description: Lorem imsum dolor sit amet
+        '403':
+          description: Forbidden
+        '404':
+          description: Blogs not found
+components:
+  schemas:
+    Role:
+      type: object
+      title: Role
+      properties:
+        id:
+          description: role id
+          type: number
+          example: 2
+          uniqueItems: true
+        name:
+          description: Name of the role
+          type: string
+          minLength: 3
+          example: admin
+    Account:
+      type: object
+      title: Account
+      properties:
+        username:
+          description: Property name's description (type is string)1111
+          type: string
+          example: example
+        password:
+          description: 'Property name''s description (type is string, format is password)'
+          type: string
+          format: password
+        roleId:
+          description: Property name's description (type is number)
+          type: number
+          example: 8
+    Blog:
+      type: object
+      title: Blog
+      properties:
+        title:
+          description: Property name's description (type is string)1111
+          type: string
+          example: example
+        description:
+          description: Property name's description (type is string)1111
+          type: string
+          example: Lorem imsum dolor
+        published:
+          description: Property name's description (type is string)1111
+          type: string
+          example: 2018-07-15T21:20:18.000Z
+          format: ISO date string
+        previewImg:
+          description: Property name's description (type is string)1111
+          type: string
+          example: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg
+        id:
+          description: Property name's description (type is number)
+          type: number
+          example: 8
+          uniqueItems: true
+        watched:
+          description: Property name's description (type is number)
+          type: number
+          example: 82
+        comments:
+          description: Property name's description (type is number)
+          type: number
+          example: 8
