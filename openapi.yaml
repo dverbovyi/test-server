@@ -32,10 +32,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Role'
-              example:
-                id: 3
+                type: array
+                items:
+                  $ref: '#/components/schemas/Role'
+              example: [
+                id: 3,
                 name: manager
+              ]
         '403':
           description: Forbidden
         '404':
@@ -56,11 +59,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Account'
-              example:
-                username: dverbovyi
-                password: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
+              example: [
+                username: dverbovyi,
+                password: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,
                 roleId: 3
+              ]
         '403':
           description: Forbidden
         '404':
@@ -81,15 +87,18 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Blog'
-              example:
-                id: 3
-                title: Predictive analytics
-                watched: 323
-                comments: 23
-                published: 2018-07-15T21:20:18.000Z
-                previewImg: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg
+                type: array
+                items:
+                  $ref: '#/components/schemas/Blog'
+              example: [
+                id: 3,
+                title: Predictive analytics,
+                watched: 323,
+                comments: 23,
+                published: 2018-07-15T21:20:18.000Z,
+                previewImg: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg,
                 description: Lorem imsum dolor sit amet
+              ]
         '403':
           description: Forbidden
         '404':
