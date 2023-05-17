@@ -32,14 +32,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  $ref: '#/components/schemas/Role'
-              example: [
-                id: 3,
-                name: manager
-              ]
+                $ref: '#/components/schemas/Roles'
         '403':
           description: Forbidden
         '404':
@@ -60,15 +53,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  $ref: '#/components/schemas/Account'
-              example: [
-                username: dverbovyi,
-                password: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,
-                roleId: 3
-              ]
+                $ref: '#/components/schemas/Accounts'
         '403':
           description: Forbidden
         '404':
@@ -89,86 +74,80 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  $ref: '#/components/schemas/Blog'
-              example: [
-                id: 3,
-                title: Predictive analytics,
-                watched: 323,
-                comments: 23,
-                published: 2018-07-15T21:20:18.000Z,
-                previewImg: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg,
-                description: Lorem imsum dolor sit amet
-              ]
+                $ref: '#/components/schemas/Blogs'
         '403':
           description: Forbidden
         '404':
           description: Blogs not found
 components:
   schemas:
-    Role:
-      type: object
-      title: Role
-      properties:
-        id:
-          description: role id
-          type: number
-          example: 2
-          uniqueItems: true
-        name:
-          description: Name of the role
-          type: string
-          minLength: 3
-          example: admin
-    Account:
-      type: object
-      title: Account
-      properties:
-        username:
-          description: Property name's description (type is string)1111
-          type: string
-          example: example
-        password:
-          description: 'Property name''s description (type is string, format is password)'
-          type: string
-          format: password
-        roleId:
-          description: Property name's description (type is number)
-          type: number
-          example: 8
-    Blog:
-      type: object
-      title: Blog
-      properties:
-        title:
-          description: Property name's description (type is string)1111
-          type: string
-          example: example
-        description:
-          description: Property name's description (type is string)1111
-          type: string
-          example: Lorem imsum dolor
-        published:
-          description: Property name's description (type is string)1111
-          type: string
-          example: 2018-07-15T21:20:18.000Z
-          format: ISO date string
-        previewImg:
-          description: Property name's description (type is string)1111
-          type: string
-          example: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg
-        id:
-          description: Property name's description (type is number)
-          type: number
-          example: 8
-          uniqueItems: true
-        watched:
-          description: Property name's description (type is number)
-          type: number
-          example: 82
-        comments:
-          description: Property name's description (type is number)
-          type: number
-          example: 8
+    Roles:
+      type: array
+      title: Roles
+      items:
+        type: object
+        properties:
+          id:
+            description: role id
+            type: number
+            example: 2
+            uniqueItems: true
+          name:
+            description: Name of the role
+            type: string
+            minLength: 3
+            example: admin
+    Accounts:
+      type: array
+      title: Accounts
+      items:
+        type: object
+        properties:
+          username:
+            description: Property name's description (type is string)1111
+            type: string
+            example: example
+          password:
+            description: 'Property name''s description (type is string, format is password)'
+            type: string
+            format: password
+          roleId:
+            description: Property name's description (type is number)
+            type: number
+            example: 8
+    Blogs:
+      type: array
+      title: Blogs
+      items:
+        type: object
+        properties:
+          title:
+            description: Property name's description (type is string)1111
+            type: string
+            example: example
+          description:
+            description: Property name's description (type is string)1111
+            type: string
+            example: Lorem imsum dolor
+          published:
+            description: Property name's description (type is string)1111
+            type: string
+            example: 2018-07-15T21:20:18.000Z
+            format: ISO date string
+          previewImg:
+            description: Property name's description (type is string)1111
+            type: string
+            example: https://blog.griddynamics.com/content/images/2018/08/pp_desktop.jpg
+          id:
+            description: Property name's description (type is number)
+            type: number
+            example: 8
+            uniqueItems: true
+          watched:
+            description: Property name's description (type is number)
+            type: number
+            example: 82
+          comments:
+            description: Property name's description (type is number)
+            type: number
+            example: 8
